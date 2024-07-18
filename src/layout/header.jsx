@@ -123,7 +123,7 @@ const Header = () => {
             <div
               className={` ${
                 active ? "right-0" : "right-[-100%]"
-              } h-screen w-full transition-all duration-300 top-0 right-0 z-50 bg-[#f4f7ff] fixed max-[900px]:block hidden`}
+              } h-full w-full transition-all duration-300 top-0 right-0 z-50 bg-[#f4f7ff] fixed max-[900px]:block hidden`}
             >
               <div className="container flex h-[72px] items-center  justify-between">
                 <Link to={"/"}>
