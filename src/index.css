@@ -92,3 +92,14 @@ main {
     box-shadow: none;
   }
 }
+
+.reveal {
+  transform: translateY(90px);
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+}
+
+.reveala.active {
+  transform: translateX(0);
+  opacity: 1;
+}

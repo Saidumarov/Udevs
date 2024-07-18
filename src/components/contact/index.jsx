@@ -107,7 +107,7 @@ const Contact = () => {
                 <Twitter2 />
               </span>
             </div>
-            <div className="w-[85%]  max-[768px]:hidden overflow-hidden rounded-md mt-10">
+            <div className="w-[85%]  max-[768px]:hidden block  overflow-hidden rounded-md mt-10">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.156311648024!2d69.33484177606674!3d41.34895607130485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8dbb8e1f0391%3A0xd04770323fe890a5!2sUdevs!5e0!3m2!1suz!2s!4v1721274945501!5m2!1suz!2s"
                 width="100%"

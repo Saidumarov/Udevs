@@ -6,7 +6,7 @@ const Iman = () => {
   return (
     <section className="mobile w-full h-full bg-white">
       <div className="container pb-20">
-        <div className="w-full hidden ml-5 max-[900px]:block mt-20">
+        <div className="w-full hidden  max-[900px]:block mt-20">
           <img
             src={imanLogo}
             alt="Iman"
