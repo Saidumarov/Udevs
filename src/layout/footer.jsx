@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="pb-10">
         <img className="w-[106px] mx-auto pt-16" src={logo} alt="Logo" />
       </div>
-      <div className="container flex justify-between flex-wrap">
-        <div className="w-auto max-[7668px]:w-full max-[768px]:mt-5 max-[7668px]:w-full">
+      <div className="container flex justify-between max-[768px]:flex-wrap">
+        <div className="w-auto max-[768px]:w-full max-[768px]:mt-5 ">
           <h3 className="text-[1.2rem] text-[#313133] pb-2 font-[600]">
             About us
           </h3>
@@ -37,7 +37,7 @@ const Footer = () => {
             Clients
           </a>
         </div>
-        <div className="w-auto max-[7668px]:w-full max-[768px]:mt-5">
+        <div className="w-auto max-[768px]:w-full max-[768px]:mt-5">
           <h3 className="text-[1.2rem] text-[#313133] pb-2 font-[600]">
             Services
           </h3>
@@ -72,7 +72,7 @@ const Footer = () => {
             Optimization IT consulting infrastructure
           </a>
         </div>
-        <div className="w-auto max-[7668px]:w-full max-[768px]:mt-5">
+        <div className="w-auto max-[768px]:w-full max-[768px]:mt-5">
           <h3 className="text-[1.2rem] text-[#313133] pb-2 font-[600]">
             Portfolio
           </h3>
