@@ -1,4 +1,4 @@
-import "./index"
+import "./animation/index";
 import Router from "./router/router";
 function App() {
   return (

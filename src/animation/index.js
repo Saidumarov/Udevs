@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", () => {
-    let reveals = document.querySelectorAll(".reveal");
+    let reveals = document.querySelectorAll(".reveal,.animation_img");
 
     for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;

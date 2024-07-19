@@ -121,75 +121,93 @@ export const Clints2 = [
 export const Navbar = [
   {
     title: "Direction",
+    href: "services",
   },
   {
     title: "Command",
+    href: "team",
   },
   {
     title: "Services",
     icon: up,
+    href: "mobile",
     category: [
       {
         title: "Development of mobile applications",
         img: mobile,
+        href: "mobile",
       },
       {
         title: "Development and implementation ERP systems",
         img: tarmoq,
+        href: "tarmoq",
       },
       {
         title: "User interface, User experience design",
         img: user,
+        href: "design",
       },
       {
         title: "IT consulting",
         img: desktop,
+        href: "desktop",
       },
       {
         title: "Optimization IT consulting infrastructure",
         img: settings,
+        href: "settings",
       },
     ],
   },
   {
     title: "Tools",
+    href: "tools",
   },
   {
     title: "Clients",
+    href: "clients",
   },
   {
     title: "Portfolio",
     icon: up,
+    href: "portfolio",
     category: [
       {
         title: "Delever",
         img: d,
+        href: "portfolio",
       },
       {
         title: "Sms.uz",
         img: s,
+        href: "sms",
       },
       {
         title: "Goodzone",
         img: g,
+        href: "goodzone",
       },
       {
         title: "Iman",
         img: i,
+        href: "iman",
       },
     ],
   },
   {
     title: "Language",
     icon: up,
+    href: "",
     category: [
       {
         title: "RUS",
         img: ru,
+        href: "ru",
       },
       {
         title: "ENG",
         img: en,
+        href: "en",
       },
     ],
   },

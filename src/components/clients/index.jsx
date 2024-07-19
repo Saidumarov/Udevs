@@ -3,11 +3,13 @@ import { Clints2, ClintsDb } from "../../db";
 
 const Clients = () => {
   return (
-    <section className="w-full h-full bg-white pb-20">
+    <section className="w-full h-full bg-white pb-20" id="clients">
       <div className="container pt-20 pb-14 max-[900px]:py-5">
-        <h1 className="max-w-[800px] max-[900px]:text-[32px] max-[900px]:leading-[48px] text-[64px] leading-[64px] font-[600] text-[#1b5bf7]">
-          Our clients
-        </h1>
+        <div className="reveal">
+          <h1 className="max-w-[800px] max-[900px]:text-[32px] max-[900px]:leading-[48px] text-[64px] leading-[64px] font-[600] text-[#1b5bf7]">
+            Our clients
+          </h1>
+        </div>
       </div>
       <div className="w-full relative overflow-hidden ">
         <Marquee

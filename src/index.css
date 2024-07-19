@@ -96,10 +96,98 @@ main {
 .reveal {
   transform: translateY(90px);
   opacity: 0;
-  transition: all 1.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.reveala.active {
+.reveal.active {
   transform: translateX(0);
   opacity: 1;
+}
+.animation_img {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+}
+
+.animation_img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card {
+  width: 31.5%;
+}
+@media (max-width: 900px) {
+  .card {
+    width: 48%;
+  }
+}
+.img_cover {
+  width: 95%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  object-fit: contain;
+}
+
+input[type="checkbox"]:checked + label span {
+  background-color: #4f00fa;
+  border-color: transparent;
+}
+
+input[type="checkbox"] + label span::before {
+  content: "";
+  display: none;
+}
+
+input[type="checkbox"]:checked + label span::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 8px 8px;
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .tools {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .tools {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.tools_card {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 0.2s linear;
+  border-radius: 5px;
+}
+.tools_text {
+  white-space: nowrap;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 90px;
+  text-overflow: ellipsis;
+  text-align: center;
 }

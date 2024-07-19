@@ -9,12 +9,20 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY < 1400) {
-        setActiveSection("Direction");
-      } else if (scrollY < 2200) {
-        setActiveSection("Command");
-      } else {
+      if (scrollY > 10370) {
+        setActiveSection("");
+      } else if (scrollY > 7608) {
+        setActiveSection("Portfolio");
+      } else if (scrollY > 7104) {
+        setActiveSection("Clients");
+      } else if (scrollY > 6336) {
+        setActiveSection("Tools");
+      } else if (scrollY > 2070) {
         setActiveSection("Services");
+      } else if (scrollY > 1470) {
+        setActiveSection("Command");
+      } else if (scrollY > 0) {
+        setActiveSection("Direction");
       }
     };
 
@@ -24,14 +32,18 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleClek = () => {
+    setAactive(!active);
+  };
   return (
     <>
       <header className="w-full border-b fixed bg-white shadow-sm h-[72px] z-40">
         <div className="container h-full px-2 md:px-3 sm:px-4 bg-white ">
           <nav className="flex items-center justify-between h-full">
-            <Link to={"/"}>
+            <a href="#">
               <img className="w-[92px] m-0" src={logo} alt="Logo" />
-            </Link>
+            </a>
             <ul className="flex items-center m-0 p-0 list-none max-[900px]:hidden">
               {Navbar.map((el, i) => (
                 <li
@@ -52,7 +64,7 @@ const Header = () => {
                     } block leading-[20px] py-[10px] ${
                       el.title !== "Language" && "hover:border-[#1b5bf7]"
                     } transition-all flex items-center gap-1 duration-200 px-0 text-[14px] font-[700] text-[#18191f] border-b-2 rounded-sm `}
-                    href="#"
+                    href={`#${el.href}`}
                   >
                     {el.title}
                     {el?.icon ? <img src={el?.icon} alt="svg" /> : <></>}
@@ -82,7 +94,7 @@ const Header = () => {
                         } mb-2 hover:bg-[#1b5bf7] hover:text-white transition-all duration-200`}
                       >
                         <a
-                          href="services"
+                          href={`#${c.href}`}
                           className="flex items-center w-full py-2 pl-3 "
                         >
                           <img
@@ -109,7 +121,10 @@ const Header = () => {
                 </li>
               ))}
               <button className=" hover:scale-105 transition-all duration-200 w-[112px] h-[40px] text-center bg-[#1b5bf7] text-white rounded-[8px]">
-                <a href="#" className="text-[14px] font-[700] text-[#fff]">
+                <a
+                  href="#contact"
+                  className="text-[14px] font-[700] text-[#fff]"
+                >
                   Contact
                 </a>
               </button>
@@ -126,7 +141,7 @@ const Header = () => {
               } h-full w-full transition-all duration-300 top-0 right-0 z-50 bg-[#f4f7ff] fixed max-[900px]:block hidden`}
             >
               <div className="container flex h-[72px] items-center  justify-between">
-                <Link to={"/"}>
+                <Link onClick={handleClek} to={"/"}>
                   <img className="w-[92px] m-0" src={logo} alt="Logo" />
                 </Link>
                 <button
@@ -138,18 +153,38 @@ const Header = () => {
               </div>
               <div className="text-center  pt-[31%] h-full">
                 <ul>
-                  <li className=" text-[32px] font-[600]  text-[#18191f] leading-[54px] ">
-                    <a href="">Services</a>
+                  <li
+                    onClick={handleClek}
+                    className=" text-[32px] font-[600]  text-[#18191f] leading-[54px] "
+                  >
+                    <a className="block" href="#services">
+                      Services
+                    </a>
                   </li>
-                  <li className=" text-[32px] font-[600]  text-[#18191f] leading-[54px] ">
-                    <a href="">Clients</a>
+                  <li
+                    onClick={handleClek}
+                    className=" text-[32px] font-[600]  text-[#18191f] leading-[54px] "
+                  >
+                    <a className="block" href="#clients">
+                      Clients
+                    </a>
                   </li>
-                  <li className=" text-[32px] font-[600]  text-[#18191f] leading-[54px] ">
-                    <a href="">Command</a>
+                  <li
+                    onClick={handleClek}
+                    className=" text-[32px] font-[600]  text-[#18191f] leading-[54px] "
+                  >
+                    <a className="block" href="#team">
+                      Command
+                    </a>
                   </li>
                 </ul>
-                <button className="text-[20px] mt-[35%] font-[700] py-3 px-4  hover:scale-105 transition-all duration-200 w-[96%] text-center bg-[#1b5bf7] text-white rounded-[8px]">
-                  Contact
+                <button
+                  onClick={handleClek}
+                  className="text-[20px] mt-[35%] font-[700] py-3 px-4  hover:scale-105 transition-all duration-200 w-[96%] text-center bg-[#1b5bf7] text-white rounded-[8px]"
+                >
+                  <a className="block" href="#contact">
+                    Contact
+                  </a>
                 </button>
                 <div className="flex gap-5 mt-8 justify-center  items-center">
                   <span className="w-10 h-10  rounded-full bg-[#bbcdfa] cursor-pointer p-2 ">

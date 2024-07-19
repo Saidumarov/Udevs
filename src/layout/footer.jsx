@@ -14,25 +14,25 @@ const Footer = () => {
           </h3>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#services"
           >
             Direction
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#team"
           >
             Command
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#tools"
           >
             Tools
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#clients"
           >
             Clients
           </a>
@@ -43,31 +43,31 @@ const Footer = () => {
           </h3>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#mobile"
           >
             Development of mobile applications
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#tarmoq"
           >
             Development and implementation ERP systems
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#design"
           >
             User interface, User experience design
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#desktop"
           >
             IT consulting
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#settings"
           >
             Optimization IT consulting infrastructure
           </a>
@@ -78,25 +78,25 @@ const Footer = () => {
           </h3>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#portfolio"
           >
             Delever{" "}
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#sms"
           >
             Sms.uz
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#goodzone"
           >
             Goodzone
           </a>
           <a
             className="flex items-center justify-start  text-[18px] leading-8 text-[#1b5bf7] hover:underline"
-            href=""
+            href="#iman"
           >
             Iman
           </a>

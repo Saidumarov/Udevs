@@ -45,6 +45,11 @@ const Main = () => {
                 className="text-[40px]  max-[900px]:text-[28px] max-[900px]:text-center font-[600]  text-[#1b5bf7] mb-5  leading-10 "
               />
             </div>
+            <button className="main max-[900px]:hidden block mt-8 hover:scale-105 transition-all duration-200 w-[248px] h-[56px] text-center bg-[#1b5bf7] text-white rounded-[8px]">
+              <span className="text-[20px] font-[700] text-[#fff]">
+                Contact
+              </span>
+            </button>
           </div>
           <div className="w-[48%] max-[900px]:w-full">
             <img src={hero} alt="" className="max-[900px]:mx-auto block" />

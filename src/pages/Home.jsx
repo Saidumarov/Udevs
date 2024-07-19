@@ -8,6 +8,7 @@ import Mobile from "../components/mobile";
 import Optimization from "../components/optimization";
 import Services from "../components/services";
 import Team from "../components/team";
+import Tools from "../components/tools";
 import Work from "../components/work";
 import Delever from "../projects/delever";
 import Goodzone from "../projects/goodzone";
@@ -25,6 +26,7 @@ const Home = () => {
       <Design />
       <Optimization />
       <IT_consulting />
+      <Tools />
       <Clients />
       <Delever />
       <Smsuz />
